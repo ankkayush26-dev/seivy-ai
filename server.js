@@ -1,4 +1,4 @@
-i
+import "dotenv/config";
 import "dotenv/config";
 import express from "express";
 import rateLimit from "express-rate-limit";
