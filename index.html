@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09090f">
+  <meta name="description" content="Seivy AI — your thoughtful AI assistant.">
+  <title>Seivy AI — Your AI, your space</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="/" aria-label="Seivy AI home">
+        <span class="brand-mark">✳</span>
+        <span>seivy<span class="brand-light">.ai</span></span>
+      </a>
+      <button class="new-chat" id="newChat"><span>＋</span> New chat</button>
+      <div class="side-label">YOUR SPACE</div>
+      <div class="side-note"><span class="status-dot"></span> Ready to help</div>
+      <div class="sidebar-bottom">
+        <div class="mini-orb">✦</div>
+        <div><strong>Seivy AI</strong><p>A little more clarity.</p></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+        <div class="model-pill"><span class="status-dot"></span> Seivy Assistant <span class="chevron">⌄</span></div>
+        <button class="icon-button" id="clearChat" title="Clear chat" aria-label="Clear chat">↻</button>
+      </header>
+
+      <section class="conversation" id="conversation" aria-live="polite">
+        <div class="welcome" id="welcome">
+          <div class="hero-orb"><span>✳</span></div>
+          <p class="eyebrow">YOUR PERSONAL AI SPACE</p>
+          <h1>Hey there.<br><span>What’s on your mind?</span></h1>
+          <p class="subheading">Ideas, questions, plans, or just a thought.<br>Let’s figure it out together.</p>
+          <div class="suggestions">
+            <button class="suggestion" data-prompt="Help me make a study plan for this week."><span class="suggestion-icon">✎</span><span><b>Plan my week</b><small>Make a simple, realistic plan</small></span><span class="suggestion-arrow">↗</span></button>
+            <button class="suggestion" data-prompt="Explain artificial intelligence in simple words."><span class="suggestion-icon">⌘</span><span><b>Explain something</b><small>Make a tricky topic feel easy</small></span><span class="suggestion-arrow">↗</span></button>
+            <button class="suggestion" data-prompt="Give me 5 creative ideas for a new project."><span class="suggestion-icon">✧</span><span><b>Explore ideas</b><small>Start with a spark of inspiration</small></span><span class="suggestion-arrow">↗</span></button>
+            <button class="suggestion" data-prompt="Help me write a friendly, professional message."><span class="suggestion-icon">↗</span><span><b>Write something</b><small>Turn a thought into the right words</small></span><span class="suggestion-arrow">↗</span></button>
+          </div>
+        </div>
+        <div class="messages" id="messages"></div>
+      </section>
+
+      <div class="composer-wrap">
+        <form class="composer" id="chatForm">
+          <textarea id="promptInput" rows="1" maxlength="4000" placeholder="Message Seivy AI..." aria-label="Message Seivy AI"></textarea>
+          <div class="composer-footer">
+            <span class="composer-hint"><span>✦</span> Made for curiosity</span>
+            <div class="send-area"><span class="key-hint">Enter ↵</span><button class="send-button" id="sendButton" type="submit" aria-label="Send message">↑</button></div>
+          </div>
+        </form>
+        <p class="disclaimer">Seivy AI can make mistakes. Check important information.</p>
+      </div>
+    </main>
+  </div>
+  <script src="/app.js" defer></script>
+</body>
+</html>
