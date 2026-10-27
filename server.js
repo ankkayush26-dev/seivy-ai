@@ -1,5 +1,5 @@
 import "dotenv/config";
-import "dotenv/config";
+
 import express from "express";
 import rateLimit from "express-rate-limit";
 import path from "node:path";
